@@ -16,7 +16,7 @@ $lname = $_POST['l_name'];
 $age = $_POST['s_name'];
 $countries = $_POST['countries'];
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+$sql = "INSERT INTO MyGuests (firstname, lastname, email, age)
 VALUES ('$fname', '$l_name', '$age')";
 
 if ($conn->query($sql) === TRUE) {
