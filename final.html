@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    body
+    {
+      background-image: url("bgimg.gif");
+    }
+    div {
+      height: 210px;
+      width: 200px;
+      padding: 300px;
+      background-color: white;
+    }
+
+    p {
+      margin: 0;
+    }
+    
+
+    #first {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 20px solid black;
+      
+    }
+     
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+    #second {      
+     border: 5px solid;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+
+     transform: translate(-50%, -50%);
+     padding: 10px;           
+    }
+
+    #second:hover
+    {
+      
+    }
+
+    #third {
+      background-color: indianred;
+      border: 10px solid black;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  
+  <div id="second">
+    <img src="Our Blue.png" alt="Trulli" width="60" height="25px" class="center">
+       <form>
+        <label>Your Name:*</label>
+        <input type="text" name="" value="" class="center" required>
+        <label>Email:*</label>
+        <input type="text" name="" value="" class="center" required>
+        <label>Phone number:*</label>
+        <input type="text" name="" value="" class="center" required>
+        <label for="cars">Country:</label>
+
+<select name="countries" id="cars" class = "center">
+  <option value="volvo"></option>
+  <option value="volvo">India</option>
+  <option value="saab">Pakistan</option>
+  <option value="mercedes">Uganda</option>
+  <option value="audi">United States of America</option>
+</select>
+        <br>
+        <input type="submit" name = "submit" class="center">
+      </form>
+        <br>
+        *required
+
+        
+  </div>
+  
+</body>
+
+</html>
